@@ -1,4 +1,4 @@
-class Dict(dict):
+class AutoDict(dict):
     def __init__(self):
         self.count = 0
 
@@ -10,10 +10,10 @@ class Dict(dict):
         self.count += 1
 
 
-class Type(type):
+class EnumMeta(type):
     def __prepare__(*args):
-        return Dict()
+        return AutoDict()
 
 
-class Enum(metaclass=Type):
+class Enum(metaclass=EnumMeta):
     ...
