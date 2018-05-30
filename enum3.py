@@ -17,6 +17,8 @@ class EnumMeta(type):
 
 class Enum(metaclass=EnumMeta):
     """
+    Enum type that autoincrements values without explicit assignment.
+
     >>> class Fruit(Enum):
     ...     apple
     ...     berry
@@ -30,4 +32,5 @@ class Enum(metaclass=EnumMeta):
 
     >>> Fruit.cherry
     2
+
     """
