@@ -4,6 +4,8 @@
 # Enum type that autoincrements values without explicit assignment
 
 ```python
+>>> from enum3 import Enum
+
 >>> class Fruit(Enum):
 ...     apple
 ...     berry
@@ -17,6 +19,7 @@
 
 >>> Fruit.cherry
 2
+
 ```
 
 Note: requires Python 3

@@ -3,6 +3,6 @@ language: python
 python:
   - 3.6
 script:
-  coverage run --source=. -m doctest enum3.py
+  coverage run --source=. -m doctest README.md
 after_success:
   coveralls
