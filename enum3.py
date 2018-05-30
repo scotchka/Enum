@@ -16,4 +16,18 @@ class EnumMeta(type):
 
 
 class Enum(metaclass=EnumMeta):
-    ...
+    """
+    >>> class Fruit(Enum):
+    ...     apple
+    ...     berry
+    ...     cherry
+
+    >>> Fruit.apple
+    0
+
+    >>> Fruit.berry
+    1
+
+    >>> Fruit.cherry
+    2
+    """
